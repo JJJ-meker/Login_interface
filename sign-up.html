@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Demo</title>
+		<style type='text/css'>
+			body{
+				display:flex;
+				justify-content: center;
+				background: url(img/backgroundpicture.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover; 
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			h1 {
+				text-align:center;
+			}
+			.box {
+				width: 700px;
+				height: 900px;
+				border: grey solid 5px;
+				background-color: white;
+			}
+			.content {
+				width: 600px;
+				height: 700px;
+				border: grey solid 2px;
+				margin: 30px;
+				padding: 20px;
+				background-color: antiquewhite;
+			}
+			label {
+				font-size: 20px;
+			}
+			.sign-in {
+				width: 500px;
+				height: 30px;
+			}
+			.sign-up-button {
+				margin-top: 50px;
+				margin-left: 0px;
+				font: 30px "微软雅黑";
+				background-color: dodgerblue;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>云家园信息查询</h1>
+			<div class="content"><br />
+				<label for="username">账户</label><br />
+				<input class="sign-in" type="text" id="username" placeholder="请输入学号"/><br /><br /><br />
+				<label for="password" >密码</label><br />
+				<input class="sign-in" type="password" id="password" placeholder="请输入密码"/><br />
+				<div class="sign-up-button"><span id="sign-up">登录查询</span></div><br /><br />
+				<p id="searchResult"></p>
+			</div>
+		</div>
+		<script src="js/for-sign-up.js"></script>
+	</body>
+</html>
